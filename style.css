@@ -1,0 +1,195 @@
+body {
+  background-color: #c4e3e6;
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+}
+
+.cal-input {
+  background-color: #f3f9f3;
+  display: block;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px gainsboro;
+  padding: 6px;
+  border-radius: 6px;
+  text-align: right;
+  font-size: 1.2em;
+  width: 20.5em;
+}
+
+input {
+  color: #00494d;
+}
+.container {
+  display: flex;
+  width: 60%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  border-radius: 10px;
+  box-shadow: 1px 2px rgb(172, 169, 169);
+  padding: 10px;
+}
+
+.left {
+  flex: 1;
+  padding-right: 10px;
+  margin-top: 10px;
+  width: 60%;
+}
+
+.right {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.left-section-container {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.right-section-container {
+  background: #00494d;
+
+  height: 90%;
+  border-radius: 20px;
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.amount-wrapper:before {
+  content: "$";
+  position: absolute;
+  left: 6px;
+  top: 1px;
+  color: #a2a2a3;
+  font-size: 1.3em;
+}
+
+.amount-wrapper {
+  position: relative;
+}
+
+.people-wrapper {
+  position: relative;
+}
+
+#logo {
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  color: #a2a2a3;
+  font-size: 0.9em;
+}
+
+.tips-wrapper {
+  display: flex;
+}
+
+.tip-item {
+  background: #00494d;
+  color: white;
+  margin: 5px;
+  flex: 1;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tip-item:hover {
+  background-color: rgb(146 223 213);
+  color: #00494d;
+}
+
+.select-tip {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tip-amount {
+  height: 60px;
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 20px;
+  margin-top: 20px;
+}
+
+.total {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 20px;
+}
+
+.reset-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.reset-button {
+  background-color: #25c2ae;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 7px;
+  text-transform: uppercase;
+  color: #00494d;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.littlelabels {
+  color: #3f7679;
+  font-size: 14px;
+}
+
+.custom {
+  margin: 5px;
+  flex: 1;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  width: 1.2em;
+  font-size: 15px;
+}
+
+.biglabels {
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -40px;
+  font-weight: 700px;
+  color: #26c0ab;
+}
+
+.biglabels:before {
+  content: "$";
+  position: relative;
+  font-size: 1.3em;
+  margin-top: -8px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}

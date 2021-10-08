@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/fontawesome.min.css" integrity="sha512-fZR38yq4xO90wo6TP7f0IltoS2HxJD3HmXEEt4cGU3BXPDjGZ6nun24myAgfajbfO1TOigLZT/ylZGRhA8vtZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css" integrity="sha512-ioRJH7yXnyX+7fXTQEKPULWkMn3CqMcapK0NNtCN8q//sW7ZeVFcbMJ9RvX99TwDg6P8rAH2IqUSt2TLab4Xmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/brands.min.css" integrity="sha512-+n7m3RE4Kfehu5LesFQxtBhGEZd6FE0aXv/LsWX7kb49U2c7QjK2MykTWyO4jiRJ3W1EfjMLQcoTjTYw4YjVHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/solid.min.css" integrity="sha512-sbDEagmKSeG0CTQisLyayNBuXpx8x20AtYxFMYBacV2hThiUdGGlykPgspdZOxBc/jZrPM1pj7qCgRVSi00Y6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tip Calculator</title>
+
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo.svg" alt="logo">
+
+    </header>
+    <main class ="container">
+
+        <div class = "left">
+            <div class= "left-section-container">
+            <label for="">BILL</label>
+
+            	<div class="amount-wrapper">
+                  
+                    <input id= "bill" class="cal-input" name= "amount" type= "text" placeholder = "0"/>
+                 </div>
+
+        <div class="select-tip">
+            <label for="">Select Tip %</label>
+            <div class="tips-wrapper">
+                <div class= "tip-item" data-num="5">5%</div>
+                <div class= "tip-item" data-num="10">10%</div>
+                <div class= "tip-item" data-num="15">15%</div>
+                
+            </div>
+            <div class="tips-wrapper">
+            <div class= "tip-item" data-num="20">20%</div>
+            <div class= "tip-item" data-num="30">30%</div>
+            <input class= "custom" id = "custom" name= "custom" type= "text" placeholder="Custom">
+            </div>
+
+        </div>
+
+        <label for="">Number of people</label>
+        <div class="people-wrapper">
+            <i class="fas fa-user" id="logo"></i>
+            <input id= "nop" class="cal-input" name= "amount" type= "text" placeholder = "0"/>
+         </div>
+        </div>
+        </div> <!--/left-->
+        <div class = "right">
+            <div class = "right-section-container">
+                <div class="tip-amount">
+                    Tip Amount
+                    <div class= "labels">
+                    <label for="" class = "littlelabels"> /Person </label>
+                    
+                    <label for="" id="totaltip" class = "biglabels"> 0 </label>
+                </div>
+                </div>
+                <div class= "total">
+                    Total
+                    
+                    <label for="" class = "littlelabels"> /Person </label>
+                   
+                    <label for="" id="totalperson" class= "biglabels"> 0 </label>
+                    
+                </div>
+                <div class="reset-container">
+                    <div class= "reset-button">
+                        Reset
+                    </div>
+                </div>
+
+            </div> <!--./right-section-container-->
+        </div> <!--/right-->
+
+    </main> <!--container-->
+    <footer>
+        <div class="foot">
+        Challenge from <a href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX"> frontendmentor.io </a> by <a href="https://github.com/GearHiram1397"> Hiram Moises Lugo</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
